@@ -8,7 +8,7 @@ tasks:
 - name: Apache & MySQL
   command: >
     cp .env.example .env;
-    cp .htaccess.example .htaccess;
+    # cp .htaccess.example .htaccess;
     mysqld --initialize-insecure;
     mysqld &
     sleep 5;
